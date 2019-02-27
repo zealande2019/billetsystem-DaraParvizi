@@ -14,6 +14,20 @@ namespace BilTest
             decimal pris = bil.Pris();
 
             Assert.AreEqual(240, pris);
+
+         
+        }
+
+        [TestMethod]
+        public void MCKøretøjTest()
+        {
+         
+
+            var mc = new MC();
+
+            string køretøjMc = mc.køretøj();
+            Assert.AreEqual("MC", køretøjMc);
+
         }
     }
 }
